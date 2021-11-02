@@ -1,0 +1,221 @@
+@media only screen and (max-width: 800px) {
+  /* 1. 전체 페이지 공통 요소 */
+
+  /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+  /*뒤로가기 버튼*/
+  .Register-back {
+    width: 10%;
+  }
+
+  .Register-back button {
+    border: 0;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 20px 0px 20px 10px;
+  }
+
+  .Register-back i {
+    font-size: 20px;
+    background-color: rgba(240, 248, 255, 0);
+  }
+
+  /* input box 클릭하면 자동생성되는 border-line 제거 */
+  .Register-box input:focus {
+    outline: none;
+  }
+
+  /* 3. only 이 페이지에서만 쓰이는 요소 */
+
+  .Register-body {
+    margin: 0;
+    height: 100%;
+    background-color: rgba(241, 241, 241, 0.658);
+    font-family: Noto Sans KR, sans-serif;
+  }
+  /* 입력 틀 전체 */
+  #wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  #content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+  }
+
+  /* 스꾸실 로고 */
+  .Register-logo {
+    text-align: center;
+  }
+  .Register-logo img {
+    width: 80%;
+  }
+
+  /* 타이틀 */
+  #content h3 {
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  /* input box*/
+  .Register-box {
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: solid 1px #dadada;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+  }
+
+  .Register-int {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+  }
+
+  .Register-box input {
+    font-family: Noto Sans KR, sans-serif;
+  }
+
+  /* 비밀번호 양식 체크-확인 로고 (양식에 안맞거나 틀리면 로고 바뀌게 하려 했는데 실패ㅠ) */
+  .Register-box .int_pass {
+    padding-right: 40px;
+  }
+
+  .Register-box .int_pass_check {
+    padding-right: 40px;
+  }
+
+  .Register-success {
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: 2px solid #2ecc71;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+  }
+
+  .Register-fail {
+    display: block;
+    width: 100%;
+    height: 51px;
+    border: 2px solid #e74c3c;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+  }
+
+  .Register-pswdImg {
+    width: 18px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+
+  /* 이메일 input + dropdown */
+  #Email_wrap {
+    display: table;
+    width: 100%;
+  }
+
+  #Email_ID {
+    display: table-cell;
+    width: 147px;
+  }
+
+  #Email_type {
+    display: table-cell;
+    width: 147px;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+
+  .Register-box select {
+    width: 100%;
+    height: 29px;
+    font-size: 15px;
+    background: #fff
+      url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50%
+      no-repeat;
+    background-size: 20px 8px;
+    -webkit-appearance: none;
+    display: inline-block;
+    text-align: start;
+    border: none;
+    cursor: default;
+    font-family: Noto Sans KR, sans-serif;
+  }
+
+  /* 가입 버튼 */
+
+  .Register-btn_area {
+    margin: 30px 0 91px;
+  }
+
+  #btnJoin {
+    width: 100%;
+    padding: 21px 0 17px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(141, 198, 63);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Noto Sans KR, sans-serif;
+  }
+}
+
+/* 자동완성 기능 관련 css 추가 */
+.autoCompleteText {
+  width: 100%;
+  background-color: #fff;
+  z-index: 11;
+  padding-left: -14px;
+  padding-right: -14px;
+}
+
+.autoCompleteText input {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+}
+
+.autoCompleteText ul {
+  width: 304px;
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding-left: 14px;
+  margin-left: -14px;
+  background-color: #fff;
+  border: solid 1px #dadada;
+}
+
+.autoCompletText ul::before {
+  content: "";
+}
+
+.autoCompleteText li {
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.autoCompleteText li:hover {
+  text-decoration: underline;
+  background-color: #c4bebe;
+}
